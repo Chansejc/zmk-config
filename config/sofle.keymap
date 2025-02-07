@@ -59,9 +59,9 @@
 //               |     |      |      |      |        |  |       |       |       |       |      |
             bindings = <
 &kp GRAVE &kp F1    &kp F2    &kp F3      &kp F4    &kp F5                    &kp F6    &kp F7   &kp F8    &kp F9    &kp F10   &kp F11
-&kp       &kp  &kp  &kp  &kp  &kp                  &kp PG_UP &kp &kp &kp &kp &kp F12
-&trans    &kp  &kp  &kp  &kp  &kp                  &kp PG_DN &kp &kp &kp &kp &kp 
-&trans    &kp  &kp  &kp  &kp  &kp    &trans &trans  &kp &kp &kp &kp &kp LBKT  &kp RBKT 
+&kp       &kp       &kp       &kp         &kp       &kp                       &kp PG_UP &kp      &kp       &kp       &kp       &kp F12
+&trans    &kp       &kp       &kp         &kp       &kp                       &kp PG_DN &kp      &kp       &kp       &kp       &kp 
+&trans    &kp       &kp       &kp         &kp       &kp        &trans &trans  &kp       &kp      &kp       &kp       &kp LBKT  &kp RBKT 
                     &trans    &trans      &trans    &trans     &trans &trans  &trans    &trans   &trans    &trans
             >;
 
@@ -78,10 +78,10 @@
 //                |      |       |       |      |      |  |      |      |      |       |      |
             bindings = <
 &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                  &trans    &trans    &trans   &trans    &trans  &trans
-&trans     &kp &kp &kp &trans       &trans                        &kp PG_UP &trans    &kp UP   &trans    &kp N0  &trans
-&trans     &kp &kp &kp &trans       &kp                       &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT &kp &kp 
-&trans     &kp &kp &kp &kp &trans        &trans  &trans  &trans    &trans    &trans   &trans    &trans  &trans
-                        &trans       &trans       &trans       &trans        &trans  &trans  &trans    &trans    &trans   &trans
+&trans     &kp          &kp          &kp &trans       &kp                                     &kp PG_UP &trans    &kp UP   &trans    &kp  &trans
+&trans     &kp          &kp          &kp &trans       &kp                                     &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT &kp &kp 
+&trans     &kp          &kp          &kp              &kp                  &trans        &trans  &trans  &trans    &trans    &trans   &trans    &trans  &trans
+                        &kp       &kp      &kp       &kp        &kp  &kp  &kp    &kp    &kp   &kp
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
