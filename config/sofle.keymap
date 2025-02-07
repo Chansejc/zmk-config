@@ -58,8 +58,8 @@
 //               |     |      |      |      |        |  |       |       |       |       |      |
             bindings = <
 &kp GRAVE &kp F1    &kp F2    &kp F3      &kp F4    &kp F5                    &kp F6    &kp F7   &kp F8    &kp F9    &kp F10   &kp F11
-&kp       &kp       &kp       &kp         &kp       &kp                       &kp PG_UP &kp      &kp       &kp       &kp       &kp F12
-&trans    &kp       &kp       &kp         &kp       &kp                       &kp PG_DN &kp      &kp       &kp       &kp       &kp 
+&kp       &kp       &kp       &kp         &kp       &kp                       &kp PG_UP &kp      &kp UP    &kp       &kp       &kp F12
+&trans    &kp       &kp       &kp         &kp       &kp                       &kp PG_DN &kp LEFT &kp DOWN  &kp RIGHT &kp 
 &trans    &kp       &kp       &kp         &kp       &kp        &trans &trans  &kp       &kp      &kp       &kp       &kp LBKT  &kp RBKT 
                     &trans    &trans      &trans    &trans     &trans &trans  &trans    &trans   &trans    &trans
             >;
