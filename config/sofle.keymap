@@ -15,7 +15,7 @@
 #define RAISE 2
 #define ADJUST 3
 
- //something
+
  /{ 
    // Activate ADJUST layer by pressing raise and lower
     conditional_layers {
@@ -38,9 +38,9 @@
 // | SHIFT |  Z  |  X  |  C   |  V   |  B   |  MUTE  |  |       |  N   |  M    |  ,    |  .   |   /   | SHIFT |
 //               | CTRL | GUI | ALT  | LOWER|  ENTER |  | SPACE | ENTER| RAISE | GUI   | DEL  |
             bindings = <
-&kp ESC &kp N1 &kp N2   &kp N3   &kp N4    &kp N5                           &kp N6 &kp N7    &kp N8    &kp N9   &kp N0   &none
-&kp TAB  &kp Q  &kp W    &kp E    &kp R     &kp T                            &kp Y  &kp U     &kp I     &kp O    &kp P    &kp BSPC
-&kp CAPS &kp A  &kp S    &kp D    &kp F     &kp G                            &kp H  &kp J     &kp K     &kp L    &kp SEMI &kp SQT
+&kp ESC   &kp N1 &kp N2   &kp N3   &kp N4    &kp N5                           &kp N6 &kp N7    &kp N8    &kp N9   &kp N0   &none
+&kp TAB   &kp Q  &kp W    &kp E    &kp R     &kp T                            &kp Y  &kp U     &kp I     &kp O    &kp P    &kp BSPC
+&kp CAPS  &kp A  &kp S    &kp D    &kp F     &kp G                            &kp H  &kp J     &kp K     &kp L    &kp SEMI &kp SQT
 &kp LSHFT &kp Z  &kp X    &kp C    &kp V     &kp B      &kp C_MUTE &none      &kp N  &kp M     &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
                  &kp LCTRL &kp LGUI &kp LALT &mo LOWER  &kp RET    &kp SPACE  &kp RET  &mo RAISE &kp RGUI  &kp DEL
             >;
@@ -58,11 +58,11 @@
 // |       |     |     |      |      |      |        |  |       | PG_DN |       |       |      |   [   |   ]   |
 //               |     |      |      |      |        |  |       |       |       |       |      |
             bindings = <
-&kp GRAVE &kp F1    &kp F2    &kp F3      &kp F4    &kp F5                    &kp F6    &kp F7   &kp F8    &kp F9    &kp F10   &kp F11
-&none       &none       &none       &none         &none       &none                       &kp PG_UP &kp      &kp UP    &none       &none       &kp F12
-&none    &none       &none       &none         &none       &none                       &kp PG_DN &kp LEFT &kp DOWN  &kp RIGHT  &none 
-&none    &none      &none      &none         &none       &none        &trans &trans  &none       &none      &none       &none       &kp LBKT  &kp RBKT 
-                    &trans    &trans      &trans    &trans     &trans &trans  &trans    &trans   &trans    &trans
+&kp GRAVE  &kp F1    &kp F3      &kp F3        &kp F4      &kp F5                      &kp F6      &kp F7     &kp F8      &kp F9      &kp F10       &kp F11
+&none      &none     &none       &none         &none       &none                       &kp PG_UP   &none      &kp UP      &none       &kp LBKT      &kp RBKT
+&none      &none     &none       &none         &none       &none                       &kp PG_DN   &kp LEFT   &kp DOWN    &kp RIGHT   &kp LBKT      &kp RBKT
+&none      &none     &none       &none         &none       &none        &trans &trans  &none       &none      &none       &none       &kp LBKT      &kp RBKT 
+                     &trans      &trans        &trans      &trans       &trans &trans  &trans      &trans     &trans      &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -77,15 +77,15 @@
 // |       |      |      |       |       |      |      |  |      |      |      |       |      |       |       |
 //                |      |       |       |      |      |  |      |      |      |       |      |
             bindings = <
-&bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                  &trans    &trans    &trans   &trans    &trans  &trans
-&trans     &none          &none          &kp &trans       &none                                     &kp PG_UP &trans    &kp UP   &trans    &none  &trans
-&trans     &none          &none          &kp &trans       &none                                     &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT &none &none 
-&trans     &none          &none          &none              &none                  &trans        &trans  &trans  &trans    &trans    &trans   &trans    &trans  &trans
-                        &none       &none      &none       &none        &none  &none  &none    &none    &none   &none
+&bt BT_CLR &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4                  &trans     &trans    &trans    &trans    &trans   &trans
+&trans     &none          &none          &none      &trans      &none                            &kp PG_UP  &trans    &kp UP    &trans    &none    &trans
+&trans     &none          &none          &none      &trans      &none                            &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT &none    &none 
+&trans     &none          &none          &none      &none       &none        &trans &trans       &trans     &trans    &trans    &trans    &trans   &trans  
+                          &none          &none      &none       &none        &none  &none        &none      &none     &none     &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
+   };
 };
-}
